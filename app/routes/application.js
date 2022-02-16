@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 
-import { createStore } from 'tracked-redux';
 import { createStorage } from 'ember-tracked-storage-polyfill';
+import { createStore } from 'tracked-redux';
 import { assert } from '@ember/debug';
 
 const store = createStore((state = { items: [] }, action) => {
