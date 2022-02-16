@@ -1,7 +1,9 @@
-{{page-title "BrokenImportReproduction"}}
+{{page-title "Items"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<h1>Items</h1>
+<ul>
+{{#each this.model as |item|}}
+  <li data-test-item>{{item}}</li>
+{{/each}}
+</ul>
